@@ -1,0 +1,361 @@
+
+
+
+/*head
+----------------------------------------------------------------------------------------------------------------*/
+.header{
+	height: 70px;
+}
+@media (max-width: 900px) {
+    .Header {
+      max-width: 100%; 
+      height: auto;} //最大寬度為100%,取消高度改自動
+      }
+
+
+#logo{
+
+
+}
+
+#logo h1 a{
+	text-decoration:none;
+	width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;
+	color:#666; 
+	font-size: 25px; 
+	font-family: Corbel light,serif;
+	font-weight: lighter;
+	position: absolute;
+	left:8%;
+	top: 28px;
+	display: inline-block;
+
+}
+/*首頁圖
+------------------------------------------------------------------------------------------------------------------*/
+.bgded img{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 70%;
+  display: block;
+  
+}
+
+/*分類
+-------------------------------------------------------------------------------------------------------------------*/
+#menu{
+	float: right;
+	line-height: 20px;
+}
+#menu ul{
+	padding:0 0;
+}
+
+#menu li{
+	float: left;
+	text-align: center;
+	list-style: none;
+	color: #666;
+	font-family: Corbel light,serif;
+	padding-right: 4vw;
+	font-size: 16px;
+}
+#menu li a{
+	text-decoration:none;
+	color: #666;
+	display: block;
+	margin: 0 1px;
+}
+#menu li a:hover{
+	background: #fff;
+	color: #fff;
+}
+
+.showmenu{
+	display: none;
+}
+.closemenu{
+	display: none;
+}
+@media (max-width: 900px){
+  #menu {
+    /*隱藏選單開始*/
+    max-height: 0px;
+    overflow: hidden;
+    /*隱藏選單結束*/
+    transition: max-height 1s;
+    margin-top: 1px;
+    /*絕對定位疊在網頁上*/
+    position: absolute;
+    z-index: 100;
+    /*header 80px+1px boder 線條*/
+    top: 90px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: #fff;
+    opacity: 90%;
+  }
+  #menu li{
+    float: none;
+    padding: 30px 0;
+  }
+  .menu li a{
+    transition: all 0.3s;
+  }
+  #menu li a:hover{
+    background: #fff;
+    color: #fff;
+  }
+  .showmenu{
+    display: block;
+    float: right;
+    margin: 1em;
+  }
+  /*jQ點擊後動態在 body 加上 class */
+  .menu-show #menu{
+    max-height: 500px
+  }
+}
+  
+
+/*center
+---------------------------------------------------------------------------------------------------------------------*/
+.content {
+	width: 60%;
+  	margin:5vw 20vw;	
+	}
+
+/*words------------------------------------------*/
+.content h3,.content h4,.content p{		
+	color: #666;
+  	list-style: none;
+	font-family: Corbel light,serif;
+}
+.content h3{
+	font-size: 50px;
+	margin: 0;
+}
+.content h4{
+	font-weight: normal;
+	margin-top: 10px;
+}
+.content p{
+	margin:50px 0 0 0 ;
+	line-height: 40px;
+	margin-bottom: 10%;
+}
+.text_c {
+	text-align: center;
+}
+/*words end------------------------------------------*/
+.content{
+	width: 80%;
+  	margin:5vw 10vw;
+}
+
+.content img{
+	width: 100%;
+}
+.circle  img{
+	border-radius:999em;
+	max-width:60%;
+	margin: 0 20%;
+}
+
+
+.item2 ,.item3,.item4, .item5 ,.item6,.item7, .item8 ,.item9 {
+	margin:0 auto;
+	padding-bottom:18%;	
+	}
+
+
+
+/*2 items------------------------------------------------*/
+
+.items_text h3{
+	font-size: 30px;
+}
+/*2 items end------------------------------------------------*/
+
+
+
+@media(min-width: 768px){
+	.content{
+		width: 50%;
+  		margin:5vw 26vw;	
+	}
+	.content img{
+		height: auto;	
+	}
+	.item1, .item2 ,.item3,.item4, .item5 ,.item6,.item7, .item8 ,.item9 {
+	padding-bottom:18%;	
+	}
+}	
+	
+
+@media(min-width: 1440px){
+	/*2 items------------------------------------------*/
+	.items {
+		display: flex;;
+	}
+	.items img, .items_text{
+		width: 50%;	
+        margin: 0;
+        height: auto;
+	}
+	.items_text{
+		padding: 0 50px;
+	}
+	/*2 items end------------------------------------------*/
+}
+
+
+
+
+
+
+/*footer
+-----------------------------------------------------------------------------------------------------------------------*/
+
+footer, .name,.connection,.footermenu,.footermenu a,.create ,.create a{
+	color: #000; 
+	font-family: Corbel light,serif;
+	text-decoration: none;
+	list-style: none;
+
+}
+footer ul{
+	list-style: none;
+}
+
+
+
+
+/*all end--------------------------------------------------------------*/
+
+.name{
+	height: auto;
+}
+.name img{
+	max-width: 300px;
+}
+.connection{
+	height: auto;
+}
+.footermenu{
+	height: auto;
+	line-height: 200%;
+}
+
+.footermenu li :hover{
+	background: #fff;
+	color: #fff;
+}
+
+
+
+
+
+
+.con img{
+	height: 15px;
+}
+
+
+
+
+
+
+/*#8d74fe-------*/
+/*author---------------------------------------------------------------------------*/
+footer .create{
+	text-align:center;
+	background-color: #fff;
+	padding: 20px;
+	clear: both;
+}
+
+
+/*RWD---*/
+@media(min-width: 768px){
+	footer{
+		max-width:80%;
+		margin:0 auto;
+	}
+	.name,.connection,.footermenu{
+		display: flex;
+	}
+	.name{
+		width:26%;
+		float:left;
+	}
+	h5{
+		margin-block-start: 0;
+	}
+	.connection{
+		padding-top: 4%;
+		width:44%;
+		float:left;
+	}
+	.footermenu{
+		width:30%;
+		float:right;
+	}
+}
+
+
+@media(min-width: 1024px){
+	footer{
+		max-width:70%;
+		margin:0 auto;
+	}
+	.name,.connection,.footermenu{
+		display: flex;
+	}
+	.name{
+		padding-left: 8%;
+		width:22%;
+		float:left;
+	}
+	.connection{
+		padding-left: 3%;
+		padding-top: 6%;		
+		width:36%;
+		float:left;
+	}
+	.footermenu{
+		width:30%;
+		float:right;
+	}
+}
+
+
+@media(min-width: 1200px){
+	footer{
+		max-width:70%;
+		margin:0 auto;
+	}
+	.name,.connection,.footermenu{
+		display: flex;
+	}
+	.name{
+		padding-left: 10%;
+		width:20%;
+		float:left;
+	}
+	h5{
+		margin-block-start: 0;
+	}
+	.connection{
+		padding-left: 5%;
+		padding-top: 3%;		
+		width:31%;
+		float:left;
+	}
+	.footermenu{
+		padding-left:6%;
+		width:24%;
+		float:right;
+	}
+}
