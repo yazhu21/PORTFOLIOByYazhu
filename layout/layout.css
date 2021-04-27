@@ -175,9 +175,7 @@
 .mask h4 {
     text-align: center;
 }
-a:hover .mask{
-	opacity:80%;
-}
+
 
 
 .mask h4{
@@ -186,6 +184,9 @@ a:hover .mask{
 }
 
 @media(min-width: 768px){	
+	a:hover .mask{
+	opacity:80%;
+	}
 	.mask{
 	padding-bottom:56%;
 	width:84%;
